@@ -18,7 +18,7 @@ async def on_ready():
 
 @gamble.command(name='gamble')
 async def gamble_command(ctx):
-    if random.randint(0, 1) == 0:
+    if random.randint(0, 100) == 42:
         await ctx.send("You won!")
     else:
         await ctx.send("You lost!")
